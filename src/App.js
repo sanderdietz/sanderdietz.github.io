@@ -6,6 +6,36 @@ function App() {
   const [currentMove, setCurrentMove] = useState(0);
   const [selected, setSelected] = useState(Array(81).fill(false));
   const currentSquares = history[currentMove];
+  currentSquares[0] = 5;
+  currentSquares[1] = 3;
+  currentSquares[4] = 7;
+  currentSquares[9] = 6;
+  currentSquares[12] = 1;
+  currentSquares[13] = 9;
+  currentSquares[14] = 5;
+  currentSquares[19] = 9;
+  currentSquares[20] = 8;
+  currentSquares[25] = 6;
+  currentSquares[27] = 8;
+  currentSquares[31] = 6;
+  currentSquares[35] = 3;
+  currentSquares[36] = 4;
+  currentSquares[39] = 8;
+  currentSquares[41] = 3;
+  currentSquares[44] = 1;
+  currentSquares[45] = 7;
+  currentSquares[49] = 2;
+  currentSquares[53] = 6;
+  currentSquares[55] = 6;
+  currentSquares[60] = 2;
+  currentSquares[61] = 8;
+  currentSquares[66] = 4;
+  currentSquares[67] = 1;
+  currentSquares[68] = 9;
+  currentSquares[71] = 5;
+  currentSquares[76] = 8;
+  currentSquares[79] = 7;
+  currentSquares[80] = 9;
 
   function handlePlay(nextSquares) {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
