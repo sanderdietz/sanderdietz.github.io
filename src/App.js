@@ -19,8 +19,7 @@ function App() {
 
   return (
     <>
-      <h1>Sudoku</h1>
-      <Board squares={currentSquares} />
+      <h1>//TODO</h1>
     </>
   );
 }
